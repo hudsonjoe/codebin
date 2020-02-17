@@ -1,0 +1,53 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+class Bank_Account: 
+    def __init__(self): 
+        self.balance=0
+       
+  
+    def deposit(self): 
+        amount=float(input("Enter amount to be Deposited: ")) 
+        self.balance += amount 
+        print("\n Amount Deposited:",amount) 
+  
+    def withdraw(self): 
+        amount = float(input("Enter amount to be Withdrawn: ")) 
+        if self.balance>=amount: 
+            self.balance-=amount 
+            print("\n You Withdrew:", amount) 
+        else: 
+            print("\n Insufficient balance  ") 
+  
+    def display(self): 
+        print("\n Net Available Balance=",self.balance) 
+  
+# Driver code 
+   
+# creating an object of class 
+print("Hello!!! Welcome to the ATM Machine") 
+s = Bank_Account()
+k=1
+while(k!=0):
+    print("1.to deposit 2.withdraw 3.display balance,4.to end")
+    x=int(input())
+    if(x==1):
+        s.deposit()
+        k=1
+    elif(x==2):
+        s.withdraw() 
+    elif(x==3):  
+        s.display()
+    elif(x==4):
+        print("thankyou")
+        k=0
+    elif(x==0) or (x>4):
+        print("enter a valid input")
+        k=1
+        print("**enter valid input**")
+    
+    
+
+
+
+
+
