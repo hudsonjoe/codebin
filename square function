@@ -1,0 +1,12 @@
+class square:
+    def__init__(self,side,price=10):
+        self.side=side
+    def perimeter(self):
+        reture self.side*4
+    def area(self):
+        return self.side*self.side
+    def totcost(self):
+        return self.area*self price
+sqr=square(35)
+sqr.totalcost()
+    
